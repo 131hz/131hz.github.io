@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brownie&#39;s Blog</title>
+    <link>https://131hz.github.io/</link>
+    <description>Recent content on Brownie&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://131hz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>尤達把網頁給拆了</title>
+      <link>https://131hz.github.io/blog/google-search-grogu/</link>
+      <pubDate>Sat, 02 Sep 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://131hz.github.io/blog/google-search-grogu/</guid>
+      <description>昨晚查訊息時意外發現，只要在 Google 搜尋「古古」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～
+除了搜尋古古以外，輸入曼達洛人、Grogu、Baby Yoda 或 The Mandalorian 也一樣會有特效</description>
+    </item>
+    
+  </channel>
+</rss>
