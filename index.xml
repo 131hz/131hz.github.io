@@ -6,15 +6,29 @@
     <description>Recent content on Brownie&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 02 Sep 2023 00:00:00 +0800</lastBuildDate><atom:link href="https://131hz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://131hz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>尤達把網頁給拆了</title>
+      <title>學習基礎 HTML</title>
+      <link>https://131hz.github.io/blog/learn-html/</link>
+      <pubDate>Mon, 22 Jan 2024 00:00:00 +0800</pubDate>
+      
+      <guid>https://131hz.github.io/blog/learn-html/</guid>
+      <description>標題 &amp;lt;h1&amp;gt;：最高級別的標題，通常用於網頁的主標題。
+&amp;lt;h2&amp;gt;：次高級別的標題，用於分區標題或次要主題。
+&amp;lt;h3&amp;gt; 到 &amp;lt;h6&amp;gt;：依次遞減的標題級別。
+程式碼
+&amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;Heading 3&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;Heading 4&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;Heading 5&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;Heading 6&amp;lt;/h6&amp;gt; 效果</description>
+    </item>
+    
+    <item>
+      <title>Baby Yoda 把網頁拆了</title>
       <link>https://131hz.github.io/blog/google-search-grogu/</link>
       <pubDate>Sat, 02 Sep 2023 00:00:00 +0800</pubDate>
       
       <guid>https://131hz.github.io/blog/google-search-grogu/</guid>
-      <description>昨晚查訊息時意外發現，只要在 Google 搜尋「古古」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～
-除了搜尋古古以外，輸入曼達洛人、Grogu、Baby Yoda 或 The Mandalorian 也一樣會有特效</description>
+      <description>（此特效已消失）
+昨晚查訊息時意外發現，只要在 Google 搜尋「古古」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～
+除了搜尋古古以外，輸入曼達洛人、Grogu、Baby Yoda 或 The Mandalorian 也一樣會有特效。</description>
     </item>
     
   </channel>
