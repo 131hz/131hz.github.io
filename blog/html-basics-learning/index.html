@@ -118,12 +118,6 @@
 </header>
 <!-- /navigation -->
 
-<style>
-  .tags:hover {
-    text-decoration: underline;
-  }
-</style>
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
@@ -253,7 +247,7 @@
 </fieldset>
 <hr>
 <h3 id="password-input">密碼輸入欄</h3>
-<p>輸入的內容將會以星號或圓點顯示</p>
+<p><code>type=&quot;password&quot;</code>：輸入的內容將會以星號或圓點顯示。</p>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;password&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;password&#34;</span> <span style="color:#d7827e">placeholder</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;請輸入密碼&#34;</span><span style="color:#797593">&gt;</span>
 </span></span></code></pre></div><p><strong>效果</strong></p>
@@ -262,6 +256,8 @@
 </fieldset>
 <hr>
 <h3 id="radio-button">單選按鈕</h3>
+<p><code>name</code>：定義按鈕的群組。當有相同 <code>name</code> 屬性值的單選按鈕存在時，只允許用戶選擇其中的一個選項。</p>
+<p><code>value</code>：定義單選按鈕的值。當用戶選擇了某個單選按鈕時，該按鈕的 <code>value</code> 屬性值將被提交到伺服器。</p>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;radio&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;gender&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;male&#34;</span><span style="color:#797593">&gt;</span> Male<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;radio&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;gender&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;female&#34;</span><span style="color:#797593">&gt;</span> Female<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
@@ -286,16 +282,16 @@
 
          
          
-        <span><a href="/tags/html"
+        <span><a class="single-tags" href="/tags/html"
           class="text-primary tags">#HTML</a></span>
          
-        <span><a href="/tags/%e6%a8%99%e9%a1%8c"
+        <span><a class="single-tags" href="/tags/%e6%a8%99%e9%a1%8c"
           class="text-primary tags">#標題</a></span>
          
-        <span><a href="/tags/%e5%88%97%e8%a1%a8"
+        <span><a class="single-tags" href="/tags/%e5%88%97%e8%a1%a8"
           class="text-primary tags">#列表</a></span>
          
-        <span><a href="/tags/%e8%bc%b8%e5%85%a5%e6%ac%84%e4%bd%8d"
+        <span><a class="single-tags" href="/tags/%e8%bc%b8%e5%85%a5%e6%ac%84%e4%bd%8d"
           class="text-primary tags">#輸入欄位</a></span>
          
         
