@@ -14,7 +14,7 @@
   
   <meta name="theme-name" content="liva-hugo" />
   
-  <meta name="generator" content="Hugo 0.121.2">
+  <meta name="generator" content="Hugo 0.118.2">
 
   <!-- plugins -->
   
@@ -118,6 +118,12 @@
 </header>
 <!-- /navigation -->
 
+<style>
+  .tags:hover {
+    text-decoration: underline;
+  }
+</style>
+
 <section class="section-sm">
   <div class="container">
     <div class="row">
@@ -139,26 +145,7 @@
 
         <div class="content mb-5">
           <p><img src="../../images/post/240122/christopher-gower.jpg" alt="image"></p>
-<style>
-    .table-of-contents {
-      border: 1px solid #000;
-      border-radius: 5px;
-      padding: 1.5rem;
-      margin: 1.2rem auto;
-    }
-</style>
-<div class="table-of-contents">
-  <ul>
-    <li><a href="#title">標題</a></li>
-    <li><a href="#unordered-list">無序列表</a></li>
-    <li><a href="#ordered-list">有序列表</a></li>
-    <li><a href="#text-input">文字輸入欄</a></li>
-    <li><a href="#password-input">密碼輸入欄</a></li>
-    <li><a href="#radio-button">單選按鈕</a></li>
-    <li><a href="#checkbox">複選框</a></li>
-  </ul>
-</div>
-<h3 id="title">標題</h3>
+<h3 id="標題">標題</h3>
 <p><code>&lt;h1&gt;</code>：最高級別的標題，通常用於網頁的主標題。</p>
 <p><code>&lt;h2&gt;</code>：次高級別的標題，用於分區標題或次要主題。</p>
 <p><code>&lt;h3&gt;</code> 到 <code>&lt;h6&gt;</code>：依次遞減的標題級別。</p>
@@ -177,7 +164,7 @@
 <h5 id="heading-5">Heading 5</h5>
 <h6 id="heading-6">Heading 6</h6>
 <hr>
-<h3 id="unordered-list">無序列表</h3>
+<h3 id="無序列表">無序列表</h3>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">ul</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#797593">&lt;</span><span style="color:#d7827e">li</span><span style="color:#797593">&gt;</span>項目1<span style="color:#797593">&lt;/</span><span style="color:#d7827e">li</span><span style="color:#797593">&gt;</span>
@@ -191,7 +178,7 @@
 <li>項目3</li>
 </ul>
 <hr>
-<h3 id="ordered-list">有序列表</h3>
+<h3 id="有序列表">有序列表</h3>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">ol</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#797593">&lt;</span><span style="color:#d7827e">li</span><span style="color:#797593">&gt;</span>項目1<span style="color:#797593">&lt;/</span><span style="color:#d7827e">li</span><span style="color:#797593">&gt;</span>
@@ -204,7 +191,7 @@
 <li>項目2</li>
 <li>項目3</li>
 </ol>
-<p><strong>編碼顯示，共有下列五種樣式：</strong></p>
+<p><strong>編碼顯示，有下列五種樣式：</strong></p>
 <table>
 <thead>
 <tr>
@@ -236,68 +223,66 @@
 </tbody>
 </table>
 <hr>
-<h3 id="text-input">文字輸入欄</h3>
+<h3 id="文字輸入欄">文字輸入欄</h3>
 <p><code>name</code>：後端在處理表單數據可以透過 <code>name</code> 來獲取使用者輸入的值。</p>
 <p><code>placeholder</code>：輸入框的提示或說明，通常在使用者未輸入任何內容時顯示。</p>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;text&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;username&#34;</span> <span style="color:#d7827e">placeholder</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;請輸入使用者名稱&#34;</span><span style="color:#797593">&gt;</span>
-</span></span></code></pre></div><p><strong>效果</strong></p>
+</span></span></code></pre></div><p><strong>效果</strong>
 <fieldset>
     <input type="text" name="username" placeholder="請輸入使用者名稱">
-</fieldset>
+</fieldset></p>
 <hr>
-<h3 id="password-input">密碼輸入欄</h3>
-<p><code>type=&quot;password&quot;</code>：輸入的內容將會以星號或圓點顯示。</p>
+<h3 id="密碼輸入欄">密碼輸入欄</h3>
+<p>輸入的內容將會以星號或圓點顯示</p>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;password&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;password&#34;</span> <span style="color:#d7827e">placeholder</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;請輸入密碼&#34;</span><span style="color:#797593">&gt;</span>
-</span></span></code></pre></div><p><strong>效果</strong></p>
+</span></span></code></pre></div><p><strong>效果</strong>
 <fieldset>
     <input type="password" name="password" placeholder="請輸入密碼">
-</fieldset>
+</fieldset></p>
 <hr>
-<h3 id="radio-button">單選按鈕</h3>
-<p><code>name</code>：定義按鈕的群組。當有相同 <code>name</code> 屬性值的單選按鈕存在時，只允許用戶選擇其中的一個選項。</p>
-<p><code>value</code>：定義單選按鈕的值。當用戶選擇了某個單選按鈕時，該按鈕的 <code>value</code> 屬性值將被提交到伺服器。</p>
+<h3 id="單選按鈕">單選按鈕</h3>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;radio&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;gender&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;male&#34;</span><span style="color:#797593">&gt;</span> Male<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;radio&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;gender&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;female&#34;</span><span style="color:#797593">&gt;</span> Female<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
-</span></span></code></pre></div><p><strong>效果</strong></p>
+</span></span></code></pre></div><p><strong>效果</strong>
 <fieldset>
     <label><input type="radio" name="gender" value="male"> Male</label>
     <label><input type="radio" name="gender" value="female"> Female</label>
-</fieldset>
+</fieldset></p>
 <hr>
-<h3 id="checkbox">複選框</h3>
+<h3 id="複選框">複選框</h3>
 <p><strong>程式碼</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#575279;background-color:#faf4ed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">id</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;violin&#34;</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;checkbox&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;interest&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;violin&#34;</span><span style="color:#797593">&gt;</span> <span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span> <span style="color:#d7827e">for</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;violin&#34;</span><span style="color:#797593">&gt;</span>Violin<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">id</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;viola&#34;</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;checkbox&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;interest&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;viola&#34;</span><span style="color:#797593">&gt;</span> <span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span> <span style="color:#d7827e">for</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;viola&#34;</span><span style="color:#797593">&gt;</span>Viola<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#797593">&lt;</span><span style="color:#d7827e">input</span> <span style="color:#d7827e">id</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;cello&#34;</span> <span style="color:#d7827e">type</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;checkbox&#34;</span> <span style="color:#d7827e">name</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;interest&#34;</span> <span style="color:#d7827e">value</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;cello&#34;</span><span style="color:#797593">&gt;</span> <span style="color:#797593">&lt;</span><span style="color:#d7827e">label</span> <span style="color:#d7827e">for</span><span style="color:#797593">=</span><span style="color:#ea9d34">&#34;cello&#34;</span><span style="color:#797593">&gt;</span>Cello<span style="color:#797593">&lt;/</span><span style="color:#d7827e">label</span><span style="color:#797593">&gt;</span>
-</span></span></code></pre></div><p><strong>效果</strong></p>
+</span></span></code></pre></div><p><strong>效果</strong>
 <fieldset>
     <input id="violin" type="checkbox" name="interest" value="violin"> <label for="violin">Violin</label>
     <input id="viola" type="checkbox" name="interest" value="viola"> <label for="viola">Viola</label>
     <input id="cello" type="checkbox" name="interest" value="cello"> <label for="cello">Cello</label>
-</fieldset>
+</fieldset></p>
+
         </div>
 
          
          
-        <span><a class="single-tags" href="/tags/html"
+        <span><a href="/tags/html"
           class="text-primary tags">#HTML</a></span>
          
-        <span><a class="single-tags" href="/tags/%e6%a8%99%e9%a1%8c"
+        <span><a href="/tags/%e6%a8%99%e9%a1%8c"
           class="text-primary tags">#標題</a></span>
          
-        <span><a class="single-tags" href="/tags/%e5%88%97%e8%a1%a8"
+        <span><a href="/tags/%e5%88%97%e8%a1%a8"
           class="text-primary tags">#列表</a></span>
          
-        <span><a class="single-tags" href="/tags/%e8%bc%b8%e5%85%a5%e6%ac%84%e4%bd%8d"
+        <span><a href="/tags/%e8%bc%b8%e5%85%a5%e6%ac%84%e4%bd%8d"
           class="text-primary tags">#輸入欄位</a></span>
          
         
         
-        <script defer src="https://cdn.commento.io/js/commento.js"></script>
-        <div id="commento"></div>
+
       </div>
 
       </div>
