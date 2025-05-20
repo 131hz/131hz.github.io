@@ -149,6 +149,55 @@
 
 
 
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<div id="scrollToTop" class="scroll-to-top">
+    <lottie-player
+      id="scrollLottie"
+      src="/animations/scroll-top.json"
+      background="transparent"
+      speed="1"
+      style="width: 60px; height: 60px;">
+    </lottie-player>
+  </div>  
+
+  <script>
+    const scrollBtn = document.getElementById("scrollToTop");
+    const scrollLottie = document.getElementById("scrollLottie");
+  
+    
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    });
+  
+    
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  
+    
+    scrollBtn.addEventListener("mouseenter", () => {
+      scrollLottie.play();
+    });
+
+    scrollBtn.addEventListener("mouseleave", () => {
+      scrollLottie.stop();
+    });
+  </script>
+  
+
 <footer class="text-capitalize">
   <div class="container">
     <div class="row justify-content-center">
@@ -157,7 +206,6 @@
       </div>
     </div>
   </div>
-
 </footer>
 
 <script>
@@ -222,28 +270,7 @@
               setTimeout(() => preloader.style.display = 'none', 500);
             });
         </script>
-
         
-        <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
-        <script>
-            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-          
-            window.addEventListener("scroll", () => {
-              if (window.scrollY > 300) {
-                scrollToTopBtn.style.display = "block";
-              } else {
-                scrollToTopBtn.style.display = "none";
-              }
-            });
-          
-            scrollToTopBtn.addEventListener("click", () => {
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-              });
-            });
-          </script>
-
           
           <script>
             document.addEventListener("DOMContentLoaded", function () {
