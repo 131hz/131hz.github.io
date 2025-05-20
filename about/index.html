@@ -48,13 +48,26 @@
   gtag('config', 'G-S7XPL4M1L1');
 </script>
 
+
+<script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+
 </head>
 <body>
-<!-- preloader start -->
 <div class="preloader">
-  
+  <div id="lottie-preloader" style="width: 150px; height: 150px; margin: auto;"></div>
 </div>
-<!-- preloader end -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-preloader'), 
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https:\/\/131hz.github.io\/animations\/preloader.json' 
+    });
+  });
+</script>
+
 <!-- navigation -->
 <header class="navigation">
   <div class="container">
@@ -251,5 +264,73 @@
   </svg>
   
 
+
+        
+        <script>
+            window.addEventListener('load', function () {
+              const preloader = document.querySelector('.preloader');
+              if (preloader) {
+                preloader.classList.add('hidden');
+              }
+            });
+            
+            window.addEventListener('load', function () {
+              const preloader = document.querySelector('.preloader');
+              preloader.style.transition = 'opacity 0.5s ease';
+              preloader.style.opacity = 0;
+              setTimeout(() => preloader.style.display = 'none', 500);
+            });
+        </script>
+
+        
+        <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
+        <script>
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+          
+            window.addEventListener("scroll", () => {
+              if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = "block";
+              } else {
+                scrollToTopBtn.style.display = "none";
+              }
+            });
+          
+            scrollToTopBtn.addEventListener("click", () => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              });
+            });
+          </script>
+
+          
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const toc = document.getElementById("toc");
+              const btn = document.getElementById("toc-toggle");
+          
+              
+              btn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                toc.classList.toggle("show");
+              });
+          
+              
+              toc.addEventListener("click", (e) => {
+                e.stopPropagation();
+              });
+          
+              
+              document.addEventListener("click", () => {
+                toc.classList.remove("show");
+              });
+          
+              
+              window.addEventListener("scroll", () => {
+                toc.classList.remove("show");
+              });
+            });
+          </script>
+ 
     </body>
 </html>
