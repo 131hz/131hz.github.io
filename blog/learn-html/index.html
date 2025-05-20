@@ -155,12 +155,23 @@
         </div>
 
         <div class="content mb-5">
+
           
-          <div class="toc-wrapper">
-            <button class="toc-toggle" id="toc-toggle">目錄</button>
-            <aside class="toc-drawer" id="toc">
-              <h4>目錄</h4>
-              <nav id="TableOfContents">
+          
+            <div class="post-cover">
+              <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747622395/GitHub/240122/christopher-gower_extoun.jpg" alt="封面圖" />
+            </div>
+          
+
+        
+        
+        <aside class="post-toc collapsible-toc">
+          <div class="toc-header" onclick="toggleToc()">
+            <span>目錄</span>
+            <span id="toc-toggle-icon">▼</span>
+          </div>
+          <div id="toc-content">
+            <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -183,10 +194,11 @@
     </li>
   </ul>
 </nav>
-            </aside>
           </div>
-          <p><img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747622395/GitHub/240122/christopher-gower_extoun.jpg" alt="image"></p>
-<h3 id="標題">標題</h3>
+        </aside>
+      
+
+          <h3 id="標題">標題</h3>
 <p><code>&lt;h1&gt;</code>：最高級別的標題，通常用於網頁的主標題。</p>
 <p><code>&lt;h2&gt;</code>：次高級別的標題，用於分區標題或次要主題。</p>
 <p><code>&lt;h3&gt;</code> 到 <code>&lt;h6&gt;</code>：依次遞減的標題級別。</p>
@@ -307,20 +319,25 @@
 
         </div>
 
-        
         <script>
-          window.addEventListener('load', function () {
-            
-            const preloader = document.getElementById('preloader');
-            const toc = document.querySelector('.toc-wrapper');
-        
-            if (preloader) {
-              preloader.style.display = 'none'; 
+          function toggleToc() {
+            const toc = document.getElementById("toc-content");
+            const icon = document.getElementById("toc-toggle-icon");
+            if (toc.style.display === "none") {
+              toc.style.display = "block";
+              icon.textContent = "▼";
+            } else {
+              toc.style.display = "none";
+              icon.textContent = "▲";
             }
+          }
         
-            if (toc) {
-              toc.style.display = 'block'; 
-            }
+          
+          document.addEventListener("DOMContentLoaded", () => {
+            const toc = document.getElementById("toc-content");
+            const icon = document.getElementById("toc-toggle-icon");
+            toc.style.display = "none";
+            icon.textContent = "▲";
           });
         </script>
         
@@ -481,34 +498,5 @@
             });
         </script>
         
-          
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const toc = document.getElementById("toc");
-              const btn = document.getElementById("toc-toggle");
-          
-              
-              btn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                toc.classList.toggle("show");
-              });
-          
-              
-              toc.addEventListener("click", (e) => {
-                e.stopPropagation();
-              });
-          
-              
-              document.addEventListener("click", () => {
-                toc.classList.remove("show");
-              });
-          
-              
-              window.addEventListener("scroll", () => {
-                toc.classList.remove("show");
-              });
-            });
-          </script>
- 
     </body>
 </html>
