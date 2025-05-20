@@ -9,7 +9,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Brownie">
+  <meta name="author" content="Brown">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -142,7 +142,7 @@
         
         <h2>學習基礎 HTML</h2>
         <div class="mb-3 post-meta">
-          <span>By Brownie</span>
+          <span>By Brown</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           <span>2024-01-22</span>
@@ -155,12 +155,11 @@
         </div>
 
         <div class="content mb-5">
-
           
           <div class="toc-wrapper">
-            <button class="toc-toggle" id="toc-toggle">📑 目錄</button>
+            <button class="toc-toggle" id="toc-toggle">目錄</button>
             <aside class="toc-drawer" id="toc">
-              <h3>目錄</h3>
+              <h4>目錄</h4>
               <nav id="TableOfContents">
   <ul>
     <li>
@@ -186,7 +185,6 @@
 </nav>
             </aside>
           </div>
-          
           <p><img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747622395/GitHub/240122/christopher-gower_extoun.jpg" alt="image"></p>
 <h3 id="標題">標題</h3>
 <p><code>&lt;h1&gt;</code>：最高級別的標題，通常用於網頁的主標題。</p>
@@ -309,6 +307,24 @@
 
         </div>
 
+        
+        <script>
+          window.addEventListener('load', function () {
+            
+            const preloader = document.getElementById('preloader');
+            const toc = document.querySelector('.toc-wrapper');
+        
+            if (preloader) {
+              preloader.style.display = 'none'; 
+            }
+        
+            if (toc) {
+              toc.style.display = 'block'; 
+            }
+          });
+        </script>
+        
+
          
          
         <span><a href="/tags/html"
@@ -350,7 +366,7 @@
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<div id="scrollToTop" class="scroll-to-top">
+<div id="scrollToTop" class="scroll-to-top" style="display: none;">
     <lottie-player
       id="scrollLottie"
       src="/animations/scroll-top.json"

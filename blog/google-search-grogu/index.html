@@ -9,7 +9,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Brownie">
+  <meta name="author" content="Brown">
     
   
   <meta name="theme-name" content="liva-hugo" />
@@ -142,7 +142,7 @@
         
         <h2>Baby Yoda 把網頁拆了</h2>
         <div class="mb-3 post-meta">
-          <span>By Brownie</span>
+          <span>By Brown</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
           <span>2023-09-02</span>
@@ -155,12 +155,11 @@
         </div>
 
         <div class="content mb-5">
-
           
           <div class="toc-wrapper">
-            <button class="toc-toggle" id="toc-toggle">📑 目錄</button>
+            <button class="toc-toggle" id="toc-toggle">目錄</button>
             <aside class="toc-drawer" id="toc">
-              <h3>目錄</h3>
+              <h4>目錄</h4>
               <nav id="TableOfContents">
   <ul>
     <li>
@@ -178,7 +177,6 @@
 </nav>
             </aside>
           </div>
-          
           <p><img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747622131/GitHub/230902/01-grogu_qvfa3k.gif" alt="image">
 （此特效已消失）</p>
 <p>昨晚查訊息時意外發現，只要在 Google 搜尋「<strong>古古</strong>」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～</p>
@@ -216,6 +214,24 @@
   
 
         </div>
+
+        
+        <script>
+          window.addEventListener('load', function () {
+            
+            const preloader = document.getElementById('preloader');
+            const toc = document.querySelector('.toc-wrapper');
+        
+            if (preloader) {
+              preloader.style.display = 'none'; 
+            }
+        
+            if (toc) {
+              toc.style.display = 'block'; 
+            }
+          });
+        </script>
+        
 
          
          
@@ -255,7 +271,7 @@
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-<div id="scrollToTop" class="scroll-to-top">
+<div id="scrollToTop" class="scroll-to-top" style="display: none;">
     <lottie-player
       id="scrollLottie"
       src="/animations/scroll-top.json"
