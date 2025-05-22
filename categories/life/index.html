@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   
   
-  <title>Search Result - 慢拍布朗尼</title>
+  <title>Life - 慢拍布朗尼</title>
   
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="">
   <meta name="author" content="Brown">
     
   
@@ -135,23 +135,135 @@
 </header>
 <!-- /navigation -->
 
-<section class="section">
+
+<section class="section-sm">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
+    <div class="row">
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          
+          
+          <div class="col-md-6 mb-4">
+    <article class="card">
+        
+        <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747835157/GitHub/250522/shortcuts-phone-detox_tnmb0p.jpg" class="card-img-top" alt="我用捷徑 (Shortcuts) 戒手機">
+        
+        <div class="card-body px-0">
+        
+        <a href="https://131hz.github.io/blog/shortcuts-phone-detox/" class="h5 d-block my-3">我用捷徑 (Shortcuts) 戒手機</a>
+        <div class="mb-3 post-meta">
+
+            <span>By Brown</span>
+        
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+            <span>2025-05-22</span>
+        
+            <span class="border-bottom border-primary px-2 mx-1"></span>
+        
+            <a href="/categories/life"
+            class="text-primary">Life</a>
+        
+        </div>
+        <p class="card-text"></p>
+        <a href="https://131hz.github.io/blog/shortcuts-phone-detox/" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
+          
+        </div>
+      </div>
+      
+      <div class="col-lg-4">
+  <div class="widgets">
+
+    
+    <div class="widget">
+      
+      <h4 class="widget-title">Brown</h4>
+      
+      <img src="https://131hz.github.io/images/author.png" alt=""
+        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
+      
+      <p>音樂｜學習｜生活</p>
+      <a href="https://131hz.github.io/about/" class="btn btn-outline-primary">Know More</a>
+      
+    </div>
+
+    
+    <div class="widget">
+      <h4 class="widget-title">Category</h4>
+      <ul class="list-unstyled">
+        <li><a
+            href="/categories/entertainment/">Entertainment</a>
+        </li>
+        <li><a
+            href="/categories/frontend/">Frontend</a>
+        </li>
+        <li><a
+            href="/categories/life/">Life</a>
+        </li>
+      </ul>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="widget">
+      <h4 class="widget-title">Social</h4>
+      <ul class="list-inline social-links">
+        
+        
+        <li class="list-inline-item">
+          <a href="https://odysee.com/@131hz:7" title="Odysee" target="_blank" rel="noopener">
+            <svg class="icon icon-odysee-svgrepo-com1">
+              <use xlink:href="#icon-odysee-svgrepo-com1"></use>
+            </svg>
+          </a>
+        </li>
+
+        
+        <li class="list-inline-item">
+          <a href="javascript:void(0)" title="複製 RSS 連結"
+            onclick="copyRSSLink()" rel="noopener">
+            <svg class="icon icon-rss">
+              <use xlink:href="#icon-rss"></use>
+            </svg>
+          </a>
+        </li>
+
+        
+      </ul>
+    </div>
+
+    
+    <script>
+      function copyRSSLink() {
+        const rssUrl = "https://131hz.github.io/index.xml";
+        navigator.clipboard.writeText(rssUrl).then(() => {
+          alert("RSS 連結已複製！");
+        }).catch(err => {
+          alert("複製失敗：" + err);
+        });
+      }
+    </script>    
+
+  </div>
+</div>
+
+      
+
+      
+      <div class="col-12 mt-5">
+        
       </div>
     </div>
   </div>
 </section>
+
 
 
 

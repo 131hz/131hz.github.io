@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://131hz.github.io/blog/</loc>
-    <lastmod>2024-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://131hz.github.io/categories/</loc>
-    <lastmod>2024-01-22T00:00:00+08:00</lastmod>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/categories/life/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/tags/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/blog/shortcuts-phone-detox/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/tags/%E6%88%92%E6%89%8B%E6%A9%9F/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/tags/%E6%8D%B7%E5%BE%91-shortcuts/</loc>
+    <lastmod>2025-05-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://131hz.github.io/categories/frontend/</loc>
     <lastmod>2024-01-22T00:00:00+08:00</lastmod>
@@ -14,16 +32,10 @@
     <loc>https://131hz.github.io/tags/html/</loc>
     <lastmod>2024-01-22T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://131hz.github.io/tags/</loc>
-    <lastmod>2024-01-22T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://131hz.github.io/tags/%E5%88%97%E8%A1%A8/</loc>
     <lastmod>2024-01-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://131hz.github.io/blog/learn-html/</loc>
-    <lastmod>2024-01-22T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://131hz.github.io/</loc>
     <lastmod>2024-01-22T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://131hz.github.io/tags/%E6%A8%99%E9%A1%8C/</loc>
@@ -52,5 +64,7 @@
   </url><url>
     <loc>https://131hz.github.io/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
+  </url><url>
+    <loc>https://131hz.github.io/posts/</loc>
   </url>
 </urlset>
