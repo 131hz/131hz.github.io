@@ -203,7 +203,11 @@
   <ul>
     <li><a href="#過去的我">過去的我</a></li>
     <li><a href="#捷徑設定">捷徑設定</a></li>
-    <li><a href="#自動化設定">自動化設定</a></li>
+    <li><a href="#自動化設定">自動化設定</a>
+      <ul>
+        <li><a href="#允許時間結束">允許時間結束</a></li>
+      </ul>
+    </li>
     <li><a href="#結語">結語</a></li>
   </ul>
 </nav>
@@ -212,180 +216,609 @@
       
 
           <h2 id="過去的我">過去的我</h2>
-<p>使用 iPhone 手機時，要限制手機使用時間，通常會先使用設定裡的螢幕使用時間，其中的「停用時間」與「App 限制」。過去的我想滑手機一下放鬆時，當達到了我所設定的使用時間，螢幕跳出「你已達到使用上限」的頁面時，我並不是點擊「好」，回到主畫面，我則是抱持著再一下下的心情，點下忽略限制，15 分鐘後提醒我，一而再，再而三，就掉入時間黑洞中。</p>
-<p>我就思考為什麼我會一直滑手機，通常是我想用手機查資料時，會不由自主的點開社群軟體，或是想滑手機放鬆一下，卻停不下來。</p>
-<p>因此我寫了一個捷徑，每當我打開社群軟體時，就會回到主畫面，效果如下：</p>
+<p>使用 iPhone 手機時，想限制手機使用時間，通常會先從「設定」裡的「螢幕使用時間」開始，其中的「停用時間」與「App 限制」。過去的我，每當想滑手機一下放鬆時，到了設定的使用時間時，螢幕就會跳出「你已達到使用上限」的頁面，然而我並不是點擊「好」，回到主畫面，我則是抱持著「再一下下」的心態，點下忽略限制，讓系統 15 分鐘後提醒我。一而再，再而三，就掉入時間黑洞中。</p>
+<p>我開始思考，為什麼我會不停滑手機？通常是因為想用手機查資料，卻不自覺點開社群軟體，或是本來只是想放鬆，卻停不下來。</p>
+<p>因此，我寫了一個捷徑：每當我打開社群軟體時，手機就會自動跳回主畫面，效果如下：</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/pIEtHG39njM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <h2 id="捷徑設定">捷徑設定</h2>
-<p><a href="https://www.icloud.com/shortcuts/a11655f29ebc476e84cf930e799129dd">點我取得捷徑</a></p>
-<p>取得捷徑後可以編輯捷徑允許使用時間，選擇目前的日期 -&gt; 時間，介於、晚於指定時間。</p>
-<p>我通常在午餐和晚餐時間會允許自己使用手機，可根據自己的使用習慣設定。</p>
+<p>👉 <a href="https://www.icloud.com/shortcuts/a11655f29ebc476e84cf930e799129dd">點我取得捷徑</a></p>
+<p>取得捷徑後，可以依照自己的需求編輯這個捷徑，設定允許使用手機的時間。
+點擊如果的條件，選擇「目前的日期」→「時間」，再設定成「介於」或「晚於」某個指定時間即可。</p>
+<p>像我自己通常會在午餐和晚餐時間，允許自己滑手機放鬆一下。可以根據自己的生活節奏和使用習慣，來自由調整。</p>
 <style>
-    .phone-frame {
-      width: 300px;
-      height: 600px;
-      background-color: #111;
-      border-radius: 28px;
-      padding: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      position: relative;
-      box-sizing: border-box;
-      margin: 1rem auto;
-    }
-    
-     
-    .phone-screen {
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-     
-    .phone-screen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    </style>
-    
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1006_yviyjo.jpg" alt="示意圖">
-      </div>
+  :root {
+    --phone-padding: 10px;  
+    --screen-width: 330px;
+    --screen-height: 714px;
+  }
+
+  .phone-frame {
+    width: calc(var(--screen-width) + var(--phone-padding) * 2);
+    height: calc(var(--screen-height) + var(--phone-padding) * 2);
+    background-color: #111;
+    border-radius: 36px;
+    padding: var(--phone-padding);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    position: relative;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+
+  .phone-screen {
+    width: var(--screen-width);
+    height: var(--screen-height);
+    background-color: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .phone-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+   
+  .volume-button {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 50px;
+    background-color: #444;
+    border-radius: 2px;
+  }
+
+  .volume-up {
+    top: 160px;
+  }
+
+  .volume-down {
+    top: 230px;
+  }
+
+   
+  .power-button {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    top: 200px;
+    width: 4px;
+    height: 70px;
+    background-color: #444;
+    border-radius: 2px;
+  }
+
+   
+  .notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
+    height:27px;
+    background-color: #111;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    z-index: 2;
+  }
+
+  .phone-wrapper * {
+    margin-bottom: 0 !important;
+  }
+</style>
+
+<div class="phone-wrapper">
+  <div class="phone-frame">
+    <div class="volume-button volume-up"></div>
+    <div class="volume-button volume-down"></div>
+    <div class="power-button"></div>
+
+    <div class="phone-screen">
+      <div class="notch"></div>
+      <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1006_yviyjo.jpg" alt="示意圖" loading="lazy">
     </div>
-    
+  </div>
+</div>
+
 <h2 id="自動化設定">自動化設定</h2>
-<p>新增一個自動化，選擇 App</p>
+<ol>
+<li>
+<p>打開「捷徑」App，新增一個自動化。</p>
+</li>
+<li>
+<p>接著挑選你想限制的 App（例如 IG、YouTube 等），並勾選「已開啟」以及「立即執行」。完成後點選「下一步」。</p>
+</li>
+<li>
+<p>選擇事先寫好的「戒手機」捷徑。</p>
+</li>
+</ol>
 <style>
-    .phone-frame {
-      width: 300px;
-      height: 600px;
-      background-color: #111;
-      border-radius: 28px;
-      padding: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      position: relative;
-      box-sizing: border-box;
-      margin: 1rem auto;
-    }
+  :root {
+  --phone-padding: 10px;
+  --screen-width: 330px;
+  --screen-height: 714px;
+}
+
+.phones-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  max-width: 100vw;
+}
+
+.phones-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.phone-frame {
+  width: calc(var(--screen-width) + var(--phone-padding) * 2);
+  height: calc(var(--screen-height) + var(--phone-padding) * 2);
+  background-color: #111;
+  border-radius: 36px;
+  padding: var(--phone-padding);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.phone-screen {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  background-color: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.volume-button {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 50px;
+  background-color: #444;
+  border-radius: 2px;
+}
+
+.volume-up {
+  top: 160px;
+}
+
+.volume-down {
+  top: 230px;
+}
+
+.power-button {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  top: 200px;
+  width: 4px;
+  height: 70px;
+  background-color: #444;
+  border-radius: 2px;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 27px;
+  background-color: #111;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  z-index: 2;
+}
+
+.notch-label {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.phone-wrapper * {
+  margin-bottom: 0 !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+  
+  
+  
     
-     
-    .phone-screen {
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     
-     
-    .phone-screen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    </style>
     
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1002_lgptcr.jpg" alt="示意圖">
-      </div>
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="phone-wrapper">
+  <div class="phones-scroll-wrapper">
+    <div class="phones-container">
+
+      
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">1/3</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1002_lgptcr.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1002_lgptcr.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">2/3</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1003_zlvo6s.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1003_zlvo6s.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">3/3</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1004_ls0qxx.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1004_ls0qxx.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+
     </div>
-    
-<p>選擇要執行動作的 App，並選擇「已開啟」和「立即執行」，完成後點選下一步</p>
+  </div>
+</div>
+
+<h3 id="允許時間結束">允許時間結束</h3>
+<p>如果有設定使用時間限制，可以新增一個自動化操作。步驟如下：
+首先，選擇特定時間，設定好時間後選擇「立即執行」。接著，點選「新增空白自動化」，並加入「前往主畫面」的動作。最後，點選「完成」即可。</p>
+<p>這樣一來，當設定的時間到了，系統就會自動跳回主畫面，有效避免超時還繼續使用的情況發生。</p>
 <style>
-    .phone-frame {
-      width: 300px;
-      height: 600px;
-      background-color: #111;
-      border-radius: 28px;
-      padding: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      position: relative;
-      box-sizing: border-box;
-      margin: 1rem auto;
-    }
+  :root {
+  --phone-padding: 10px;
+  --screen-width: 330px;
+  --screen-height: 714px;
+}
+
+.phones-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+  max-width: 100vw;
+}
+
+.phones-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.phone-frame {
+  width: calc(var(--screen-width) + var(--phone-padding) * 2);
+  height: calc(var(--screen-height) + var(--phone-padding) * 2);
+  background-color: #111;
+  border-radius: 36px;
+  padding: var(--phone-padding);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.phone-screen {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  background-color: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.volume-button {
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 50px;
+  background-color: #444;
+  border-radius: 2px;
+}
+
+.volume-up {
+  top: 160px;
+}
+
+.volume-down {
+  top: 230px;
+}
+
+.power-button {
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  top: 200px;
+  width: 4px;
+  height: 70px;
+  background-color: #444;
+  border-radius: 2px;
+}
+
+.notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 27px;
+  background-color: #111;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  z-index: 2;
+}
+
+.notch-label {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.phone-wrapper * {
+  margin-bottom: 0 !important;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+  
+  
+  
     
-     
-    .phone-screen {
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     
-     
-    .phone-screen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    </style>
     
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1003_zlvo6s.jpg" alt="示意圖">
-      </div>
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+<div class="phone-wrapper">
+  <div class="phones-scroll-wrapper">
+    <div class="phones-container">
+
+      
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">1/4</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976237/GitHub/250522/IMG_3644_uspglj.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976237/GitHub/250522/IMG_3644_uspglj.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">2/4</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976238/GitHub/250522/IMG_3645_w1b5iq.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976238/GitHub/250522/IMG_3645_w1b5iq.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">3/4</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976239/GitHub/250522/IMG_3646_oyrlrf.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976239/GitHub/250522/IMG_3646_oyrlrf.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+        <div class="phone-frame">
+          <div class="volume-button volume-up"></div>
+          <div class="volume-button volume-down"></div>
+          <div class="power-button"></div>
+          <div class="phone-screen">
+            <div class="notch">
+              
+                <span class="notch-label">4/4</span>
+              
+            </div>
+            <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976851/GitHub/250522/IMG_1002_ys9xhm.jpg" alt="Phone screen %!d(string=https://res.cloudinary.com/dgrkri5f1/image/upload/v1747976851/GitHub/250522/IMG_1002_ys9xhm.jpg)" loading="lazy">
+          </div>
+        </div>
+      
+
     </div>
-    
-<p>選擇「戒手機」捷徑</p>
-<style>
-    .phone-frame {
-      width: 300px;
-      height: 600px;
-      background-color: #111;
-      border-radius: 28px;
-      padding: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-      position: relative;
-      box-sizing: border-box;
-      margin: 1rem auto;
-    }
-    
-     
-    .phone-screen {
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      border-radius: 20px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-     
-    .phone-screen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    </style>
-    
-    <div class="phone-frame">
-      <div class="phone-screen">
-        <img src="https://res.cloudinary.com/dgrkri5f1/image/upload/v1747881949/GitHub/250522/IMG_1004_ls0qxx.jpg" alt="示意圖">
-      </div>
-    </div>
-    
+  </div>
+</div>
+
 <h2 id="結語">結語</h2>
-<p>照著步驟設定完之後，每當開啟有加入執行動作的 App，就會回到主畫面，有種回到現實的感覺，也會讓自己反思拿起手機是為了什麼目的。用捷徑來限制 App 使用，也不會像螢幕使用時間的 App 限制，達到使用上限時，會影響 App 訊息通知以及桌面小工具的使用。</p>
+<p>照著步驟設定完成後，每次開啟有加入自動執行動作的 App，手機就會自動跳回主畫面，讓人有種「回到現實」的感覺，也能提醒自己拿起手機的真正目的，是為了要查資料？還是要回訊息？</p>
+<p>用捷徑來限制 App 使用，不會像螢幕使用時間的 App 限制，會影響 App 的通知和桌面小工具的運作，這樣就不會因為超過使用上限而錯過重要訊息或功能。</p>
 
         </div>
 
@@ -577,7 +1010,7 @@
               preloader.style.opacity = 0;
               setTimeout(() => preloader.style.display = 'none', 500);
             });
-        </script>
+        </script>        
         
     </body>
 </html>
