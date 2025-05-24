@@ -103,7 +103,7 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://131hz.github.io/practice/">Practice Diary</a>
+            <a class="nav-link" href="https://131hz.github.io/practice-diary/">Practice Diary</a>
           </li>
           
           
@@ -179,8 +179,8 @@
               <use xlink:href="#icon-folder"></use>
             </svg>
           
-          <a href="/categories/practice"
-          class="text-primary">Practice</a>
+          <a href="/categories/practice-diary"
+          class="text-primary">Practice diary</a>
           </span>
 
         
@@ -196,14 +196,35 @@
         
         
 
-          
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/mjKkCesh_Gs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p>Laputa: Castle in the Sky - Pigeons and a Boy</p>
-<p>Original music by Joe Hisaishi</p>
-<p>Piano arrangement by Yoshiko Matsubara, Chihiro Wakiyama</p>
+          <style>
+  #odysee-iframe {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    padding-bottom: 56.25%;  
+    height: 0;
+    margin: 1rem auto;
+  }
+  #odysee-iframe iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    top: 0;
+    left: 0;
+  }
+  </style>
+  
+  <div id="odysee-iframe">
+    <iframe src="https://odysee.com/$/embed/%40131hz%3A7%2FPigeons-and-a-Boy%3A4?r=ESJfZEsEXHkYdfHr8fynTakCwRfMohgB&amp;signature=03a3e62ef3c14fddbd9f9db52bde097bb38336998ec86c59838bb103c40b11fd4c04cf50cfba3c559f9ad246efb1712b4c1222325b504f8529c51bbbf063e46a&amp;signature_ts=1748058657" allowfullscreen loading="lazy"></iframe>
+  </div>
+  
+<ul>
+<li>Laputa: Castle in the Sky - Pigeons and a Boy</li>
+<li>Original Music: Joe Hisaishi</li>
+<li>Piano Arrangement: Yoshiko Matsubara, Chihiro Wakiyama</li>
+<li>Sheet Music: Hayao Miyazaki &amp; Studio Ghibli Best Album</li>
+</ul>
 <hr>
 <p>上了大學之後，有一段時間沒再碰琴，手感變得有點生疏。所以今天就彈之前購買的綠色樂譜。這本其實很早以前就買了，但都沒什麼彈，就從今天開始，我決定把已塵封已久的樂譜都拿出來練一練。</p>
 <p>話說我不知道為什麼電鋼琴的錄音檔第 10 秒那裡會被切掉，原本有邊錄影邊錄音，結果影像和聲音對不起來，只好先放音檔啦～</p>
@@ -231,7 +252,19 @@
             icon.textContent = "▲";
           });
         </script>
+
         
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".d-inline-flex.align-items-center").forEach(function (el) {
+            
+            const hasCategory = el.querySelector("a") !== null;
+            if (!hasCategory) {
+              el.style.display = "none"; 
+            }
+          });
+        });
+        </script>
 
          
          

@@ -103,7 +103,7 @@
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://131hz.github.io/practice/">Practice Diary</a>
+            <a class="nav-link" href="https://131hz.github.io/practice-diary/">Practice Diary</a>
           </li>
           
           
@@ -179,8 +179,8 @@
               <use xlink:href="#icon-folder"></use>
             </svg>
           
-          <a href="/categories/life"
-          class="text-primary">Life</a>
+          <a href="/categories/lifestyle"
+          class="text-primary">Lifestyle</a>
           </span>
 
         
@@ -225,11 +225,29 @@
 <p>使用 iPhone 手機時，想限制手機使用時間，通常會先從「設定」裡的「螢幕使用時間」開始，其中的「停用時間」與「App 限制」。過去的我，每當想滑手機一下放鬆時，到了設定的使用時間時，螢幕就會跳出「你已達到使用上限」的頁面，然而我並不是點擊「好」，回到主畫面，我則是抱持著「再一下下」的心態，點下忽略限制，讓系統 15 分鐘後提醒我。一而再，再而三，就掉入時間黑洞中。</p>
 <p>我開始思考，為什麼我會不停滑手機？通常是因為想用手機查資料，卻不自覺點開社群軟體，或是本來只是想放鬆，卻停不下來。</p>
 <p>因此，我寫了一個捷徑：每當我打開社群軟體時，手機就會自動跳回主畫面，效果如下：</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/pIEtHG39njM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<style>
+  #odysee-iframe {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    padding-bottom: 56.25%;  
+    height: 0;
+    margin: 1rem auto;
+  }
+  #odysee-iframe iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    top: 0;
+    left: 0;
+  }
+  </style>
+  
+  <div id="odysee-iframe">
+    <iframe src="https://odysee.com/$/embed/%40131hz%3A7%2FScreenRecording_05-22-2025-08-57-51_1%3A8?r=ESJfZEsEXHkYdfHr8fynTakCwRfMohgB&amp;signature=9712c2b98e1415a108112844488113e27c6839e564ba534d9f94cfdfabe6171f4202ad427c8f80430ad5f9a0765b51ab7dcea77c39aabd3bfd443f8548af0b48&amp;signature_ts=1748050343" allowfullscreen loading="lazy"></iframe>
+  </div>
+  
 <h2 id="捷徑設定">捷徑設定</h2>
 <p>👉 <a href="https://www.icloud.com/shortcuts/a11655f29ebc476e84cf930e799129dd">點我取得捷徑</a></p>
 <p>取得捷徑後，可以依照自己的需求編輯這個捷徑，設定允許使用手機的時間。
@@ -851,7 +869,19 @@
             icon.textContent = "▲";
           });
         </script>
+
         
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".d-inline-flex.align-items-center").forEach(function (el) {
+            
+            const hasCategory = el.querySelector("a") !== null;
+            if (!hasCategory) {
+              el.style.display = "none"; 
+            }
+          });
+        });
+        </script>
 
          
          
