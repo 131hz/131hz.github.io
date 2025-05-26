@@ -6,69 +6,49 @@
     <description>Recent content in Blogs on 慢拍布朗尼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://131hz.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://131hz.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>花火大会</title>
       <link>https://131hz.github.io/blog/practice-diary/fireworks-festival/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/practice-diary/fireworks-festival/</guid>
       <description> Weathering With You - Fireworks festival Original Music: 野田洋次郎 Piano Arrangement: 川田千春 Sheet Music: ピアノソロ　天気の子　music by RADWIMPS </description>
     </item>
-    
     <item>
       <title>さんぽ</title>
       <link>https://131hz.github.io/blog/practice-diary/stroll/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/practice-diary/stroll/</guid>
       <description> My Neighbor Totoro - Sanpo Original Music: Joe Hisaishi Piano Arrangement: Kyoko Kage Sheet Music: Hayao Miyazaki &amp;amp; Studio Ghibli Best Album </description>
     </item>
-    
     <item>
       <title>ハトと少年</title>
       <link>https://131hz.github.io/blog/practice-diary/pigeons-and-a-boy/</link>
       <pubDate>Fri, 23 May 2025 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/practice-diary/pigeons-and-a-boy/</guid>
       <description>Laputa: Castle in the Sky - Pigeons and a Boy Original Music: Joe Hisaishi Piano Arrangement: Yoshiko Matsubara, Chihiro Wakiyama Sheet Music: Hayao Miyazaki &amp;amp; Studio Ghibli Best Album 上了大學之後，有一段時間沒再碰琴，手感變得有點生疏。所以今天就彈之前購買的綠色樂譜。這本其實很早以前就買了，但都沒什麼彈，就從今天開始，我決定把已塵封已久的樂譜都拿出來練一練。</description>
     </item>
-    
     <item>
       <title>我用捷徑 (Shortcuts) 戒手機</title>
       <link>https://131hz.github.io/blog/shortcuts-phone-detox/</link>
       <pubDate>Thu, 22 May 2025 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/shortcuts-phone-detox/</guid>
-      <description>過去的我 使用 iPhone 手機時，想限制手機使用時間，通常會先從「設定」裡的「螢幕使用時間」開始，其中的「停用時間」與「App 限制」。過去的我，每當想滑手機一下放鬆時，到了設定的使用時間時，螢幕就會跳出「你已達到使用上限」的頁面，然而我並不是點擊「好」，回到主畫面，我則是抱持著「再一下下」的心態，點下忽略限制，讓系統 15 分鐘後提醒我。一而再，再而三，就掉入時間黑洞中。
-我開始思考，為什麼我會不停滑手機？通常是因為想用手機查資料，卻不自覺點開社群軟體，或是本來只是想放鬆，卻停不下來。
-因此，我寫了一個捷徑：每當我打開社群軟體時，手機就會自動跳回主畫面，效果如下：
-捷徑設定 👉 點我取得捷徑</description>
+      <description>過去的我 使用 iPhone 手機時，想限制手機使用時間，通常會先從「設定」裡的「螢幕使用時間」開始，其中的「停用時間」與「App 限制」。過去的我，每當想滑手機一下放鬆時，到了設定的使用時間時，螢幕就會跳出「你已達到使用上限」的頁面，然而我並不是點擊「好」，回到主畫面，我則是抱持著「再一下下」的心態，點下忽略限制，讓系統 15 分鐘後提醒我。一而再，再而三，就掉入時間黑洞中。&#xA;我開始思考，為什麼我會不停滑手機？通常是因為想用手機查資料，卻不自覺點開社群軟體，或是本來只是想放鬆，卻停不下來。&#xA;因此，我寫了一個捷徑：每當我打開社群軟體時，手機就會自動跳回主畫面，效果如下：&#xA;捷徑設定 👉 點我取得捷徑</description>
     </item>
-    
     <item>
       <title>學習基礎 HTML</title>
       <link>https://131hz.github.io/blog/learn-html/</link>
       <pubDate>Mon, 22 Jan 2024 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/learn-html/</guid>
-      <description>標題 &amp;lt;h1&amp;gt;：最高級別的標題，通常用於網頁的主標題。
-&amp;lt;h2&amp;gt;：次高級別的標題，用於分區標題或次要主題。
-&amp;lt;h3&amp;gt; 到 &amp;lt;h6&amp;gt;：依次遞減的標題級別。
-程式碼
-&amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;Heading 3&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;Heading 4&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;Heading 5&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;Heading 6&amp;lt;/h6&amp;gt; 效果</description>
+      <description>標題 &amp;lt;h1&amp;gt;：最高級別的標題，通常用於網頁的主標題。&#xA;&amp;lt;h2&amp;gt;：次高級別的標題，用於分區標題或次要主題。&#xA;&amp;lt;h3&amp;gt; 到 &amp;lt;h6&amp;gt;：依次遞減的標題級別。&#xA;程式碼&#xA;&amp;lt;h1&amp;gt;Heading 1&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Heading 2&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;Heading 3&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;Heading 4&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;Heading 5&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;Heading 6&amp;lt;/h6&amp;gt; 效果</description>
     </item>
-    
     <item>
       <title>Baby Yoda 把網頁拆了</title>
       <link>https://131hz.github.io/blog/google-search-grogu/</link>
       <pubDate>Sat, 02 Sep 2023 00:00:00 +0800</pubDate>
-      
       <guid>https://131hz.github.io/blog/google-search-grogu/</guid>
-      <description>（此特效已消失）
-昨晚查訊息時意外發現，只要在 Google 搜尋「古古」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～
-除了搜尋古古以外，輸入曼達洛人、Grogu、Baby Yoda 或 The Mandalorian 也一樣會有特效。</description>
+      <description>（此特效已消失）&#xA;昨晚查訊息時意外發現，只要在 Google 搜尋「古古」，在頁面的右下角就會出現尤達。點擊一下尤達，接下來他就會把網頁給拆了噢～&#xA;除了搜尋古古以外，輸入曼達洛人、Grogu、Baby Yoda 或 The Mandalorian 也一樣會有特效。</description>
     </item>
-    
   </channel>
 </rss>
