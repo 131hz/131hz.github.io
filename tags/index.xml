@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 慢拍布朗尼</title>
+    <title>Tags on Brown&#39;s Blog</title>
     <link>https://131hz.github.io/tags/</link>
-    <description>Recent content in Tags on 慢拍布朗尼</description>
+    <description>Recent content in Tags on Brown&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jan 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://131hz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>piano</title>
-      <link>https://131hz.github.io/tags/piano/</link>
-      <pubDate>Sun, 25 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/piano/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>sight reading</title>
-      <link>https://131hz.github.io/tags/sight-reading/</link>
-      <pubDate>Sun, 25 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/sight-reading/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>天気の子</title>
-      <link>https://131hz.github.io/tags/%E5%A4%A9%E6%B0%97%E3%81%AE%E5%AD%90/</link>
-      <pubDate>Sun, 25 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/%E5%A4%A9%E6%B0%97%E3%81%AE%E5%AD%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>となりのトトロ</title>
-      <link>https://131hz.github.io/tags/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E3%83%88%E3%83%88%E3%83%AD/</link>
-      <pubDate>Sat, 24 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/%E3%81%A8%E3%81%AA%E3%82%8A%E3%81%AE%E3%83%88%E3%83%88%E3%83%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>天空の城ラピュタ</title>
-      <link>https://131hz.github.io/tags/%E5%A4%A9%E7%A9%BA%E3%81%AE%E5%9F%8E%E3%83%A9%E3%83%94%E3%83%A5%E3%82%BF/</link>
-      <pubDate>Fri, 23 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/%E5%A4%A9%E7%A9%BA%E3%81%AE%E5%9F%8E%E3%83%A9%E3%83%94%E3%83%A5%E3%82%BF/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>戒手機</title>
-      <link>https://131hz.github.io/tags/%E6%88%92%E6%89%8B%E6%A9%9F/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/%E6%88%92%E6%89%8B%E6%A9%9F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>捷徑 (Shortcuts)</title>
-      <link>https://131hz.github.io/tags/%E6%8D%B7%E5%BE%91-shortcuts/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0800</pubDate>
-      <guid>https://131hz.github.io/tags/%E6%8D%B7%E5%BE%91-shortcuts/</guid>
-      <description></description>
-    </item>
     <item>
       <title>HTML</title>
       <link>https://131hz.github.io/tags/html/</link>
