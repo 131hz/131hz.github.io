@@ -252,45 +252,6 @@
 
     
 
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
-        
-        
-        <li class="list-inline-item">
-          <a href="https://slowbr.gitlab.io/" title="New Blog Site" target="_blank" rel="noopener">
-            <svg class="icon icon-pencil">
-              <use xlink:href="#icon-pencil"></use>
-            </svg>
-          </a>
-        </li>
-
-        
-        <li class="list-inline-item">
-          <a href="javascript:void(0)" title="複製 RSS 連結"
-            onclick="copyRSSLink()" rel="noopener">
-            <svg class="icon icon-rss">
-              <use xlink:href="#icon-rss"></use>
-            </svg>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-
-    
-    <script>
-      function copyRSSLink() {
-        const rssUrl = "https://131hz.github.io/index.xml";
-        navigator.clipboard.writeText(rssUrl).then(() => {
-          alert("RSS 連結已複製！");
-        }).catch(err => {
-          alert("複製失敗：" + err);
-        });
-      }
-    </script>    
-
   </div>
 </div>
 
