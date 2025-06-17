@@ -401,14 +401,33 @@
         <script>
           document.addEventListener('DOMContentLoaded', function () {
             const imgs = document.querySelectorAll('img');
+        
             imgs.forEach(function (img) {
               
-              img.addEventListener('contextmenu', function (e) {
-                e.preventDefault();
-              });
+              img.addEventListener('contextmenu', e => e.preventDefault());
+        
               
-              img.addEventListener('dragstart', function (e) {
-                e.preventDefault();
+              img.addEventListener('dragstart', e => e.preventDefault());
+              img.setAttribute('draggable', 'false');
+        
+              
+              img.style.webkitTouchCallout = "none";
+        
+              
+              let timer = null;
+              img.addEventListener('touchstart', function (e) {
+                timer = setTimeout(() => {
+                  
+                  if (e.cancelable) e.preventDefault();
+                }, 600); 
+              }, { passive: true });
+        
+              img.addEventListener('touchend', function () {
+                clearTimeout(timer);
+              });
+        
+              img.addEventListener('touchmove', function () {
+                clearTimeout(timer); 
               });
             });
           });
